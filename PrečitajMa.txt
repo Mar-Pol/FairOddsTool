@@ -1,35 +1,37 @@
-FairOddsTool: je webstránka, ktorá umožňuje vypočítať férové kurzy – skutočnú pravdepodobnosť bez marže na základe pôvodných kurzov.
+FairOddsTool je webstránka, ktorá umožňuje vypočítať férové kurzy – skutočnú pravdepodobnosť bez marže na základe pôvodných kurzov.
 
 VLASTNOSTI & FUNKCIE STRÁNKY:
--> moderný pekný intuitívny dizajn
--> prepinač svetlého a tmavého režimu
--> prepinač jazyka a uloženie predvoľby do localstorage
--> ošetrenie inputov proti chybám
--> ikona "i" zobrazí význam záveru
--> webstránka používa iba dva desatinné čísla
--> v prípade, že je zadaných viac ako dva desatinných miest, automatický tretie desatinné číslo
- bude použité pri zaokruhlení druhého desatinného čísla a zvyšná budú ignorované
- 
-Návod:   
-1. Zvoliť počet tipov (napr. 2 alebo možnosť "vlastný" pre iný počet tipov).
-   Možnosť premenovania predvoleného pomenovania „Tip“:, stlačením "Pomenovať".
-		-stlačením enteru alebo kliknutím mimo pole potvrdíme zmenu
-		-kliknutím na zmenené pomenovanie môžeme ho upraviť prípadne zmazať
 
-2. Do polí zadáme kurzy.
-	- akceptuje pre desatinné miesta bodku, ale aj čiarku
-	- Príjma aj celé číslo.
-	
-3. Výsledok:
-Po stlačení "Vypočítať férové kurzy" máme okamžitý výsledok v tvare:
--pôvodný kurz (zadaný)
--vypočítaný férový kurz
--pravdepodobnosť (skutočnú z ferových kurzoch) 
--záver, ktorý zhodnotí, čo dané výpočty a kurzy znamenaj:
+   -> moderný, pekný a intuitívny dizajn
+   -> prepínač svetlého a tmavého režimu
+   -> prepínač jazyka s uložením predvoľby do localStorage
+   -> ošetrenie vstupov proti chybám
+   -> ikona „i“ zobrazí význam záveru
+   -> webstránka pracuje s dvoma desatinnými miestami
+   -> ak je zadaných viac ako dve desatinné miesta, tretie sa použije na zaokrúhlenie druhého, ostatné sa ignorujú
+
+Návod:
+    1) Zvoliť počet tipov (napr. 2 alebo možnosť „vlastný“ pre iný počet tipov).
+         - Možnosť premenovať predvolené označenie „Tip“ stlačením „Pomenovať“.
+         - Stlačením Enteru alebo kliknutím mimo poľa sa zmena potvrdí.
+         - Kliknutím na zmenený názov ho možno upraviť alebo zmazať.
+
+    2) Zadať kurzy do polí.
+        - Akceptované formáty: bodka aj čiarka ako desatinný oddeľovač.
+        - Možno zadať aj celé číslo.
+
+    3) Výsledok:
+       Po stlačení „Vypočítať férové kurzy“ sa zobrazí výsledok v tvare:
+	 - pôvodný kurz (zadaný)
+	 - vypočítaný férový kurz
+         - skutočná pravdepodobnosť podľa férových kurzov
+         - záver, ktorý vyhodnotí, čo dané výpočty znamenajú
 
 Vysvetlenie výsledku:
-Podhodnocuje kurz – Pravdepodobnosť výhry je nižšia, než kurz naznačuje → menej výhodná stávka.
-Podhodnocuje kurz → Kurz je nižší, než by mal byť, takže výhra je menej výnosná.
+    Podhodnotený kurz:
+	–> Pravdepodobnosť výhry je nižšia, než kurz naznačuje → menej výhodná stávka.
+        -> Kurz je nižší, než by mal byť, takže výhra je menej výnosná.
 
-Nadhodnocuje kurz – Pravdepodobnosť výhry je vyššia, než kurz naznačuje → dobrá príležitosť na stávku.
-Nadhodnocuje kurz → Kurz je vyšší, než by mal byť, takže výhra je výnosnejšia.
+    Nadhodnotený kurz:
+	-> Pravdepodobnosť výhry je vyššia, než kurz naznačuje → dobrá príležitosť na stávku.
+        -> Kurz je vyšší, než by mal byť, takže výhra je výnosnejšia.
